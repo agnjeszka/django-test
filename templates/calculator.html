@@ -1,0 +1,389 @@
+{% extends "base.html" %}
+
+{% block custom_stylesheet_content %}
+
+#the_canvas {
+    background-color: white;
+    width:600px;
+    height:450px;
+}
+#SECTION_1 {
+    clear: both;
+    color: rgb(56, 52, 49);
+    float: left;
+    height: 823px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    width: 500px;
+    border: 0px none rgb(56, 52, 49);
+    font: normal normal normal normal 13px / 24px'Open Sans', sans-serif;
+    outline: rgb(56, 52, 49) none 0px;
+    transition: all 0.5s ease 0s;
+}
+/*#SECTION_1*/
+ #H3_2, #H3_10, #H3_27 {
+    clear: both;
+    color: rgb(65, 65, 65);
+    height: 40px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    width: 420px;
+    perspective-origin: 210px 20px;
+    transform-origin: 210px 20px;
+    border: 0px none rgb(65, 65, 65);
+    font: normal normal 300 normal 22px / 40px'Open Sans', sans-serif;
+    margin: 0px;
+    outline: rgb(65, 65, 65) none 0px;
+}
+/*#H3_2, #H3_10, #H3_27*/
+ #DIV_3 {
+    color: rgb(56, 52, 49);
+    float: left;
+    height: 65px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    width: 420px;
+    perspective-origin: 210px 32.5px;
+    transform-origin: 210px 32.5px;
+    border: 0px none rgb(56, 52, 49);
+    font: normal normal normal normal 13px / 24px'Open Sans', sans-serif;
+    outline: rgb(56, 52, 49) none 0px;
+}
+/*#DIV_3*/
+ #LABEL_4 {
+    color: rgb(56, 52, 49);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 45px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    width: 104px;
+    perspective-origin: 52px 22.5px;
+    transform-origin: 52px 22.5px;
+    background: rgba(0, 0, 0, 0) url(http://deckpol.pl/static/polygon.png) no-repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(56, 52, 49);
+    font: normal normal normal normal 13px / 24px'Open Sans', sans-serif;
+    margin: 10px 18px;
+    outline: rgb(56, 52, 49) none 0px;
+}
+/*#LABEL_4*/
+ #INPUT_5, #INPUT_7, #INPUT_9 {
+    display: none;
+    height: 13px;
+    text-rendering: optimizeLegibility;
+    width: 448px;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(0, 0, 0);
+    font: normal normal normal normal 16px / 24px'Open Sans', sans-serif;
+    margin: 10px 0px;
+    padding: 0px;
+    transition: all 0.5s ease 0s;
+}
+/*#INPUT_5, #INPUT_7, #INPUT_9*/
+ #LABEL_6 {
+    background-position: 50% 0%;
+    color: rgb(56, 52, 49);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 45px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    width: 104px;
+    perspective-origin: 52px 22.5px;
+    transform-origin: 52px 22.5px;
+    background: rgba(0, 0, 0, 0) url(http://deckpol.pl/static/polygon.png) no-repeat scroll 50% 0% / auto padding-box border-box;
+    border: 0px none rgb(56, 52, 49);
+    font: normal normal normal normal 13px / 24px'Open Sans', sans-serif;
+    margin: 10px 18px;
+    outline: rgb(56, 52, 49) none 0px;
+}
+/*#LABEL_6*/
+ #LABEL_8 {
+    background-position: 100% 0%;
+    color: rgb(56, 52, 49);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 45px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    width: 104px;
+    perspective-origin: 52px 22.5px;
+    transform-origin: 52px 22.5px;
+    background: rgba(0, 0, 0, 0) url(http://deckpol.pl/static/polygon.png) no-repeat scroll 100% 0% / auto padding-box border-box;
+    border: 0px none rgb(56, 52, 49);
+    font: normal normal normal normal 13px / 24px'Open Sans', sans-serif;
+    margin: 10px 18px;
+    outline: rgb(56, 52, 49) none 0px;
+}
+
+{% endblock %}
+
+{% block highlights %}
+<section class="wrapper style1">
+    <div class="container">
+        <div class="row 200%">
+            <section class="6u 12u(narrower)">
+                <section id="SECTION_1">
+                        <h3 id="H3_2">
+                        Kształt
+                    </h3>
+
+                    <div id="DIV_3">
+                        <label id="LABEL_4">
+                            <input type="radio" name="type" value="a" id="INPUT_5" />
+                        </label>
+                        <label id="LABEL_6">
+                            <input type="radio" name="type" value="b" id="INPUT_7" />
+                        </label>
+                        <label id="LABEL_8">
+                            <input type="radio" name="type" value="c" id="INPUT_9" />
+                        </label>
+                    </div>
+                        <h3 id="H3_10">
+                        Wymiary
+                    </h3>
+
+                    <div id="DIV_11">
+                        <label id="LABEL_12">L1:
+                            <input type="text" name="a-side" id="INPUT_L1" value="400" /><span id="SPAN_14">m</span>
+
+                        </label>
+                        <label id="LABEL_15">L2:
+                            <input type="text" name="b-side" id="INPUT_L2" value="100" /><span id="SPAN_17">m</span>
+
+                        </label>
+                        <label id="LABEL_18">L3:
+                            <input type="text" name="c-side" id="INPUT_L3" value="100" /><span id="SPAN_20">m</span>
+
+                        </label>
+                        <label id="LABEL_21">L4:
+                            <input type="text" name="d-side" id="INPUT_L4" value="100" /><span id="SPAN_23">m</span>
+
+                        </label>
+                        <label id="LABEL_24">L5:
+                            <input type="text" name="e-side" id="INPUT_L5" value="100" /><span id="SPAN_26">m</span>
+
+                        </label>
+                    </div>
+                        <h3 id="H3_27">
+                        Listwy boczne
+                    </h3>
+
+                    <div id="DIV_28">
+                        <label id="LABEL_29">
+                            <input type="checkbox" name="side-0" checked="checked" id="INPUT_30" />Listwa przy krawędzi L1.</label>
+                        <label id="LABEL_31">
+                            <input type="checkbox" name="side-1" checked="checked" id="INPUT_32" />Listwa przy krawędzi L2.</label>
+                        <label id="LABEL_33">
+                            <input type="checkbox" name="side-2" checked="checked" id="INPUT_34" />Listwa przy krawędzi L3.</label>
+                        <label id="LABEL_35">
+                            <input type="checkbox" name="side-3" checked="checked" id="INPUT_36" />Listwa przy krawędzi L4.</label>
+                        <label id="LABEL_37">
+                            <input type="checkbox" name="side-4" checked="checked" id="INPUT_38" />Listwa przy krawędzi L5.</label>
+                        <label id="LABEL_39">
+                            <input type="checkbox" name="side-5" checked="checked" id="INPUT_40" />Listwa przy krawędzi L6.</label>
+                        <label id="LABEL_41">
+                            <input type="checkbox" name="side-6" checked="checked" id="INPUT_42" />Listwa przy krawędzi L7.</label>
+                        <label id="LABEL_43">
+                            <input type="checkbox" name="side-7" checked="checked" id="INPUT_44" />Listwa przy krawędzi L8.</label>
+                    </div>
+                </section>
+            </section>
+            <section class="6u 12u(narrower)">
+                  <div id="the_canvas"></div>
+            </section>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block custom_javascript_files %}
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+{% endblock %}
+
+{% block custom_javascript_content %}
+var canvas = document.getElementById("the_canvas");
+var c = {
+    width: canvas.offsetWidth,
+    height: canvas.offsetHeight,
+    center: {x: canvas.offsetWidth/2, y: canvas.offsetHeight/2}
+};
+console.log(c);
+
+// Creates Raphael canvas on canvas element
+var paper = Raphael(canvas, c.width, c.height);
+
+// Creates background for paper
+//var paper_bg = paper.rect(0, 0, c.width, c.height);
+//paper_bg.attr("stroke-width", 4).attr("stroke", "lightgray");
+
+
+var set = paper.set();
+var p =
+    paper.path(
+    'M 0   000 \
+	 l 0   100 \
+	 l 100 0 \
+     l 0   50 \
+	 l 100 0 \
+	 l 0   -50 \
+	 l 100 0 \
+	 l 0   -100 \
+	 Z')
+    .attr('fill', '#87B23F');
+set.push(p);
+
+var font_style = { "font-size": 14, "font-family": "Helvetica Neue", "font-weight": "bold" };
+
+var text_l1 = paper.text(150, -10, "L1").attr({fill: '#000000'});
+text_l1.attr(font_style);
+set.push(text_l1);
+var text_l2 = paper.text(310, 50, "L2").attr({fill: '#000000'});
+text_l2.attr(font_style);
+set.push(text_l2);
+var text_l3 = paper.text(250, 110, "L3").attr({fill: '#000000'});
+text_l3.attr(font_style);
+set.push(text_l3);
+var text_l4 = paper.text(210, 125, "L4").attr({fill: '#000000'});
+text_l4.attr(font_style);
+set.push(text_l4);
+var text_l5 = paper.text(150, 160, "L5").attr({fill: '#000000'});
+text_l5.attr(font_style);
+set.push(text_l5);
+var text_l6 = paper.text(90, 125, "L6").attr({fill: '#BBBBBB'});
+text_l6.attr(font_style);
+set.push(text_l6)
+var text_l7 = paper.text(50, 110, "L7").attr({fill: '#BBBBBB'});
+text_l7.attr(font_style);
+set.push(text_l7);
+var text_l8 = paper.text(-10, 50, "L8").attr({fill: '#BBBBBB'});
+text_l8.attr(font_style);
+set.push(text_l8);
+
+set.translate(75,50);
+
+function draw() {
+    var input_l1 = +($('#INPUT_L1').val() || 0);
+    var input_l2 = +($('#INPUT_L2').val() || 0);
+    var input_l3 = +($('#INPUT_L3').val() || 0);
+    var input_l4 = +($('#INPUT_L4').val() || 0);
+    var input_l5 = +($('#INPUT_L5').val() || 0);
+
+    if (input_l1 < 0) input_l1 = 0;
+    if (input_l2 < 0) input_l2 = 0;
+    if (input_l3 < 0) input_l3 = 0;
+    if (input_l4 < 0) input_l4 = 0;
+    if (input_l5 < 0) input_l5 = 0;
+    if (input_l1 < input_l5 + input_l3) input_l1 = input_l5 + input_l3;
+
+    var abs_l1 = input_l1;
+    var abs_l2 = input_l2;
+    var abs_l3 = input_l3;
+    var abs_l4 = input_l4;
+    var abs_l5 = input_l5;
+    var abs_l6 = input_l4;
+    var abs_l7 = input_l1 - input_l5 - input_l3;
+    var abs_l8 = input_l2;
+
+    var max_x = input_l2 + input_l4;
+    var scale_x = 300 / max_x;
+    input_l1 *= scale_x;
+    input_l2 *= scale_x;
+    input_l3 *= scale_x;
+    input_l4 *= scale_x;
+    input_l5 *= scale_x;
+
+    var max_y = input_l1;
+    var scale_y = 450 / max_y;
+
+    if (scale_y < 1) {
+        input_l1 *= scale_y;
+        input_l2 *= scale_y;
+        input_l3 *= scale_y;
+        input_l4 *= scale_y;
+        input_l5 *= scale_y;
+    }
+
+
+    var scaled_abs_l1 = input_l1;
+    var scaled_abs_l2 = input_l2;
+    var scaled_abs_l3 = input_l3;
+    var scaled_abs_l4 = input_l4;
+    var scaled_abs_l5 = input_l5;
+    var scaled_abs_l6 = input_l4;
+    var scaled_abs_l7 = input_l1 - input_l5 - input_l3;
+    var scaled_abs_l8 = input_l2;
+
+    var l1 = input_l1;
+    var l2 = input_l2;
+    var l3 = -input_l3;
+    var l4 = input_l4;
+    var l5 = -input_l5;
+    var l6 = -l4;
+    var l7 = -(l1 + l5 + l3);
+
+    var polygon =
+        'M 0   0 \
+        l ' + l1 + ' 0 \
+        l  0 ' + l2 + ' \
+        l ' + l3 + ' 0 \
+        l 0 ' + l4 + ' \
+        l ' + l5 + ' 0 \
+        l 0 ' + l6 + ' \
+        l ' + l7 + ' 0 \
+        Z';
+
+    p.attr("path", polygon);
+
+    text_l1.attr('text','L1 (' + abs_l1 + 'm)');
+    text_l1.attr('x', scaled_abs_l1 / 2);
+    text_l1.attr('y', -10);
+
+    text_l2.attr('text','L2 (' + abs_l2 + 'm)');
+    text_l2.attr('x', scaled_abs_l1 + 30);
+    text_l2.attr('y', scaled_abs_l2 / 2);
+
+    text_l3.attr('text','L3 (' + abs_l3 + 'm)');
+    text_l3.attr('x', scaled_abs_l7 + scaled_abs_l5 + scaled_abs_l3 / 2);
+    text_l3.attr('y', scaled_abs_l2 + 10);
+
+    text_l4.attr('text','L4 (' + abs_l4 + 'm)');
+    text_l4.attr('x', scaled_abs_l7 + scaled_abs_l5 + 30);
+    text_l4.attr('y', scaled_abs_l2 + scaled_abs_l4 / 2);
+
+    text_l5.attr('text','L5 (' + abs_l5 + 'm)');
+    text_l5.attr('x', scaled_abs_l7 + scaled_abs_l5 / 2);
+    text_l5.attr('y', scaled_abs_l2 + scaled_abs_l4 + 10);
+
+    text_l6.attr('text','L6 (' + abs_l6 + 'm)');
+    text_l6.attr('x', scaled_abs_l7 - 30);
+    text_l6.attr('y', scaled_abs_l2 + scaled_abs_l6 / 2);
+
+    text_l7.attr('text','L7 (' + abs_l7 + 'm)');
+    text_l7.attr('x', scaled_abs_l7 / 2);
+    text_l7.attr('y', scaled_abs_l2 + 10);
+
+    text_l8.attr('text','L8 (' + abs_l8 + 'm)');
+    text_l8.attr('x', -30);
+    text_l8.attr('y', scaled_abs_l8 / 2);
+}
+
+$(function(){ // this will be called when the DOM is ready
+	$('#INPUT_L1').keyup(function() { draw(); });
+	$('#INPUT_L2').keyup(function() { draw(); });
+	$('#INPUT_L3').keyup(function() { draw(); });
+	$('#INPUT_L4').keyup(function() { draw(); });
+	$('#INPUT_L5').keyup(function() { draw(); });
+    draw();
+});
+
+
+
+{% endblock %}
