@@ -17,3 +17,7 @@ def home(request):
 def calculator(request):
     context = { }
     return render(request, "calculator.html", context)
+
+def about(request):
+    context = { }
+    return render(request, "about.html", context)
