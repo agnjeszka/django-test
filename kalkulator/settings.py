@@ -101,6 +101,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = '/home/rattras/python/django-rattras/kalkulator/static'
+STATIC_ROOT = '/home/rattras/python/django-rattras/static'
 STATIC_URL = '/static/'
 
